@@ -15,7 +15,7 @@ MJML Components: Leverages MJML tags such as <mj-section>, <mj-column>, <mj-text
 🚀 How Users can View the Template Locally
 1. Download the Files
 Download the project files as a ZIP and extract them, or clone the repository: 
-git clone https://github.com/your-username/HTML-Email-Template.git
+git clone https://github.com/phillip1996/HTML-Email-Template.git
 cd HTML-Email-Template
 
 2. Install MJML (If not installed):
