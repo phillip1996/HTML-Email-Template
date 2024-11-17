@@ -2,119 +2,140 @@
   <mj-head>
     <mj-attributes>
       <mj-text font-family="Arial, sans-serif" color="#333333" />
-      <mj-image width="100px" />
-      <mj-section padding="0px" />
+      <mj-image width="30px" />
     </mj-attributes>
-    <mj-breakpoint width="480px" />
-    <mj-style inline="inline">
-      @media (max-width: 480px) {
-        .logo-text {
-          font-size: 28px !important;
-        }
-        .social-icons {
-          font-size: 18px !important;
-        }
-        .responsive-padding {
-          padding: 10px !important;
-        }
-      }
-    </mj-style>
   </mj-head>
 
   <mj-body>
-    <!-- Top Section -->
+    <!-- Top Section with Logo and Socials -->
     <mj-section background-color="#f8f8f8" padding="20px 0">
-      <mj-column width="50%">
-        <mj-text css-class="logo-text" font-size="36px" font-weight="bold" color="#007BFF" font-family="'Lobster', cursive" align="center" padding="0">
-          GLACIER
-        </mj-text>
-      </mj-column>
-      <mj-column width="50%">
-        <mj-social font-size="20px" icon-size="30px" mode="horizontal" align="center" css-class="social-icons" padding="0">
-          <mj-social-element name="facebook" href="https://facebook.com" />
-          <mj-social-element name="twitter" href="https://twitter.com" />
-          <mj-social-element name="instagram" href="https://instagram.com" />
-          <mj-social-element name="linkedin" href="https://linkedin.com" />
-          <mj-social-element name="youtube" href="https://youtube.com" />
-        </mj-social>
-      </mj-column>
-    </mj-section>
+  <mj-column width="50%" vertical-align="middle">
+    <!-- Logo -->
+    <mj-text font-size="36px" font-weight="bold" color="#007BFF" font-family="'Lobster', cursive" align="center" padding="0">
+      GLACIER
+    </mj-text>
+  </mj-column>
+  
+  <mj-column width="50%" vertical-align="middle">
+    <!-- Social Media Icons -->
+    <mj-social font-size="20px" icon-size="30px" mode="horizontal" align="center" padding="0">
+      <mj-social-element name="facebook" href="https://facebook.com" />
+      <mj-social-element name="twitter" href="https://twitter.com" />
+      <mj-social-element name="instagram" href="https://instagram.com" />
+      <mj-social-element name="linkedin" href="https://linkedin.com" />
+      <mj-social-element name="youtube" href="https://youtube.com" />
+    </mj-social>
+  </mj-column>
+</mj-section>
 
-    <!-- Who We Are Section -->
-    <mj-section
-      background-url="https://wallpapers.com/images/high/construction-workers-helping-to-complete-their-plan-aoillb1w1tqzf3m8.webp"
-      background-size="cover"
-      background-position="center center"
-      padding="40px"
-    >
+
+    <!-- Company Section -->
+    <!-- Section with Company Image Background -->
+    <mj-section background-url="https://wallpapers.com/images/high/construction-workers-helping-to-complete-their-plan-aoillb1w1tqzf3m8.webp" background-size="cover" background-position="center center" padding="0">
       <mj-column>
-        <mj-text font-size="28px" font-weight="bold" color="#ffffff" font-family="Arial, sans-serif" align="center">
-          WHO WE ARE!
-        </mj-text>
+        <!-- Company Description Text -->
+        <mj-text font-size="36px" font-weight="bold" color="#ffffff" font-family="Arial, sans-serif">
+           WHO WE ARE!
+         </mj-text>
         <mj-text font-size="16px" color="#ffffff" font-family="'Lora', 'Verdana', sans-serif" padding-top="20px">
           We are a leading civil engineering company specializing in infrastructure development, urban planning, and sustainable construction. Our team is dedicated to delivering high-quality projects that improve communities and enhance the environment.
         </mj-text>
-        <mj-button
-          href="https://www.yourcompanywebsite.com/about"
-          background-color="#007BFF"
-          color="#ffffff"
-          font-family="Arial, sans-serif"
-          padding="10px 25px"
-          font-size="16px"
-          padding-top="20px"
-          align="center"
-        >
+        
+        <!-- Button to Read More -->
+        <mj-button href="https://www.yourcompanywebsite.com/about" background-color="#007BFF" color="#ffffff" font-family="Arial, sans-serif" padding="10px 25px" font-size="16px" padding-top="20px">
           Read More
         </mj-button>
       </mj-column>
     </mj-section>
-
-    <!-- Services Section -->
-    <mj-section background-color="#f4f4f4" padding="20px" css-class="responsive-padding">
-      <mj-column width="33%">
+    <mj-section background-color="#f4f4f4" padding="20px 0">
+      <mj-column width="33.33%">
+        <!-- Engineeering services -->
         <mj-image src="https://cdn-icons-png.flaticon.com/128/12539/12539942.png" alt="Engineering" width="80px" />
-        <mj-text font-size="18px" font-weight="bold" color="#333333" align="center">Engineering</mj-text>
-        <mj-text font-size="14px" color="#666666" align="center">We provide cutting-edge engineering solutions for infrastructure projects.</mj-text>
+        <mj-text font-size="18px" font-weight="bold" color="#333333">Engineering</mj-text>
+        <mj-text font-size="16px" color="#666666">We provide cutting-edge engineering solutions for infrastructure projects.</mj-text>
       </mj-column>
-      <mj-column width="33%">
+
+      <mj-column width="33.33%">
+        <!-- Maintainance service -->
         <mj-image src="https://cdn-icons-png.flaticon.com/128/12940/12940112.png" alt="Maintenance" width="80px" />
-        <mj-text font-size="18px" font-weight="bold" color="#333333" align="center">Maintenance</mj-text>
-        <mj-text font-size="14px" color="#666666" align="center">Our expert team ensures that all systems run smoothly and are well-maintained.</mj-text>
+        <mj-text font-size="18px" font-weight="bold" color="#333333">Maintenance</mj-text>
+        <mj-text font-size="16px" color="#666666">Our expert team ensures that all systems run smoothly and are well-maintained.</mj-text>
       </mj-column>
-      <mj-column width="33%">
+
+      <mj-column width="33.33%">
+        <!-- Safety service  -->
         <mj-image src="https://cdn-icons-png.flaticon.com/128/16690/16690857.png" alt="Safety" width="80px" />
-        <mj-text font-size="18px" font-weight="bold" color="#333333" align="center">Safety</mj-text>
-        <mj-text font-size="14px" color="#666666" align="center">Safety is our top priority in all our projects, ensuring a risk-free environment.</mj-text>
+        <mj-text font-size="18px" font-weight="bold" color="#333333">Safety</mj-text>
+        <mj-text font-size="16px" color="#666666">Safety is our top priority in all our projects, ensuring a risk-free environment.</mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- Reputation Section -->
-    <mj-section background-color="#f8f8f8" padding="20px">
-      <mj-column>
-        <mj-text font-size="28px" font-weight="bold" color="#333333" align="center">Our Reputation</mj-text>
-        <mj-text font-size="16px" color="#666666" align="center" padding-top="10px">
-          At Glacier, we take pride in delivering excellence. Over the years, we've earned a solid reputation for our commitment to quality, innovation, and customer satisfaction. Our track record speaks for itself.
+    <mj-section background-color="#d3d3d3" padding="20px">
+  <!-- Left Column (Image) -->
+  <mj-column width="50%">
+       <mj-image src="images/men@work.jpg" alt="Sample Image" width="600px" height="215px" />
+  </mj-column>
+
+
+  <!-- Right Column (Text) -->
+  <mj-column width="50%">
+    <mj-text font-size="18px" font-weight="bold" color="#333333" font-family="Arial, sans-serif">
+      Onsite Job
+    </mj-text>
+    <mj-text font-size="16px" color="#666666" font-family="Arial, sans-serif" line-height="1.5">
+      we understand that hands-on, real-time work is crucial to the success of any project. Our onsite job services provide tailored solutions to meet the unique needs of each client, ensuring high-quality results delivered on time, every time.
+    </mj-text>
+  </mj-column>
+</mj-section>
+
+    <!-- Reputation -->
+    <mj-section background-color="#f8f8f8" padding="40px 0">
+  <mj-column>
+    <mj-text font-size="36px" font-weight="bold" color="#333333" font-family="Arial, sans-serif">
+      Our Reputation
+    </mj-text>
+    <mj-text font-size="18px" color="#666666" font-family="'Georgia', 'Times New Roman', serif" padding-top="20px">
+      At Glacier, we take pride in delivering excellence. Over the years, we've earned a solid reputation for our commitment to quality, innovation, and customer satisfaction. Our track record speaks for itself.
+    </mj-text>
+
+    <!-- Testimonials Section with Headshots -->
+      <!-- First Testimonial -->
+        <mj-image src="https://as1.ftcdn.net/v2/jpg/03/95/29/76/1000_F_395297652_J7Bo5IVAkYo1LFzPjEhldbOPNstxYx4i.jpg" alt="John Doe" width="100px" border-radius="50%" />
+        <mj-text font-size="16px" color="#666666" font-family="'Georgia', 'Times New Roman', serif">
+          "Their professionalism and dedication exceeded our expectations. The project was delivered ahead of schedule with excellent quality."
+          <br><i>- John Doe, CEO of Disha</i>
         </mj-text>
-      </mj-column>
-    </mj-section>
 
-    <!-- Footer -->
-    <mj-section background-color="#000000" padding="20px">
-      <mj-column width="100%">
-        <mj-text font-size="24px" color="#ffffff" font-family="'Lobster', cursive" align="center">GLACIER</mj-text>
-        <mj-text color="#ffffff" align="center">123, Pauline Street, Vancouver Canada</mj-text>
-        <mj-text color="#ffffff" align="center">&copy; 2024 Glacier. All rights reserved.</mj-text>
-        <mj-social
-          font-size="20px"
-          icon-size="25px"
-          mode="horizontal"
-          align="center"
-        >
-          <mj-social-element name="facebook" href="https://facebook.com" color="#ffffff" />
-          <mj-social-element name="twitter" href="https://twitter.com" color="#ffffff" />
-          <mj-social-element name="instagram" href="https://instagram.com" color="#ffffff" />
-        </mj-social>
-      </mj-column>
-    </mj-section>
-  </mj-body>
+      <!-- Second Testimonial -->
+             <mj-image src="https://as2.ftcdn.net/v2/jpg/01/73/98/97/1000_F_173989733_aUVFigGdev90N6Umnive0rtJlMqOmmvD.jpg" alt="Jane Smith" width="100px" border-radius="60%" />
+                 <mj-text font-size="16px" color="#666666" font-family="'Georgia', 'Times New Roman', serif">
+                      "A fantastic partner for our construction needs. The team's expertise and commitment to safety made the entire process seamless."
+                      <br><i>- Jane Smith, Project Manager, Elite Constructions</i>
+                 </mj-text>
+                 <mj-button href="https://www.yourcompanywebsite.com/testimonials" background-color="#007BFF" color="#ffffff" font-family="Arial, sans-serif" padding="10px 25px" font-size="16px" padding-top="20px">
+                     Read More Testimonials
+                 </mj-button>
+     </mj-column>
+   </mj-section>
+   <mj-section background-color="#000000">
+      <mj-column width="50%">
+           <mj-text font-size="36px" font-weight="bold" color="#fff" font-family="'Lobster', cursive" align="center" padding="20px 0">
+              GLACIER
+           </mj-text>
+      <mj-text>
+       123, Pauline Street, Vancouver Canada
+      </mj-text>
+      <mj-text align="center">
+      copyright&copy 2024
+      </mj-text>
+      <mj-social font-size="20px" icon-size="30px" mode="horizontal" align="center">
+           <mj-social-element name="facebook" href="https://facebook.com" color="#ffffff" />
+           <mj-social-element name="twitter" href="https://twitter.com" color="#ffffff" />
+           <mj-social-element name="instagram" href="https://instagram.com" color="#ffffff" />
+           <mj-social-element name="linkedin" href="https://linkedin.com" color="#ffffff" />
+           <mj-social-element name="youtube" href="https://youtube.com" color="#ffffff" />
+      </mj-social>
+    </mj-column>
+  </mj-section>
+</mj-body>
 </mjml>
