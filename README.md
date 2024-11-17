@@ -1,7 +1,7 @@
-📖 Overview
+##📖 Overview
 The Glacier Email Template is a fully responsive email design suitable for civil engineering firms, construction companies, or any business looking to communicate professionalism and clarity through email marketing. The template includes sections for company branding, services, testimonials, and social media integration, all designed to look great on any device.
 
-✨ Features
+##✨ Features
 Responsive Design: Adapts beautifully to all screen sizes, including mobile, tablet, and desktop.
 Modern Styling: Professional fonts, colors, and layout for an engaging email experience.
 Dynamic Sections: Includes branding, service offerings, testimonials, and a footer with social media links.
